@@ -1,0 +1,39 @@
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import CardPurchase from '../components/purchases/CardPurchase'
+import getConfig from '../utils/getConfig'
+
+const Purchases = () => {
+
+  const [purchases, setPurchases] = useState()
+
+  useEffect(() => {
+    const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/purchases'
+    axios.get(URL, getConfig())
+    .then(res => setPurchases(res.data.data.purchases))
+    .catch(err => console.log(err))
+
+  }, [])
+
+  //map es un metodo de arreglos no de objetos
+
+  return (
+    <div className='purchases'>
+      <h2 className='purchases__title'>My Purchases</h2>
+      <div className='purchases__container'>
+        {
+          purchases?.map(purchase => (
+            <CardPurchase
+            //la key es una propiedad exclusiva de react 
+            key={purchase.id}
+            purchase={purchase}
+             />
+          ))
+        }
+
+      </div>
+    </div>
+  )
+}
+
+export default Purchases

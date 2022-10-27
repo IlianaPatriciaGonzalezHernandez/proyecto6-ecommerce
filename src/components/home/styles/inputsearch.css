@@ -1,0 +1,28 @@
+.search__container{
+    margin-left: 70%;
+    margin-top: 20px;
+}
+
+.search__input{
+    font-family: Cambria;
+    font-size: 20px;
+    padding: 7px 15px;
+    background-color: white;
+    border: 1px solid #Ccc;
+    border-radius: 5px;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(148, 121, 173);
+}
+.search__input:hover{
+    background-color: rgba(238, 130, 238, 0.189);
+
+}
+@media (max-width: 500px) {
+
+    .search__container{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+}

@@ -1,0 +1,63 @@
+.price__form{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px #0009;
+    position:relative;
+    align-items: ;
+    max-width: 200px;
+    margin-right: auto;
+    top: 1rem;
+    /* margin-top: px;
+    margin: auto; */
+}
+
+.price__form-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.price__title-filter{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: Cambria;
+    color:  rgb(46, 7, 70);
+    text-align: center;
+}
+
+.price__label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000a;
+}
+.price__input{
+    padding: 7px 7px;
+    background-color: #F9FAFC;
+    border: 1px solid #Ccc;
+    border-radius: 5px;
+    font-weight: 300;
+}
+.price__input::placeholder{
+    color: #555A88;
+    height: 20px;
+
+}
+.price__btn-filter{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555A88;
+    box-shadow: 0 0 5px #000a;
+    color: white;
+    margin-top: 15px;
+    transition: filter 100ms ease;
+    cursor: pointer;
+    font-family: Cambria;
+
+}
+.price__btn-filter:hover{
+    filter: brightness(1.2);
+    transition: filter 100ms ease;
+    cursor: pointer;
+}

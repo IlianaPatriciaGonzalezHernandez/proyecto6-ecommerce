@@ -1,0 +1,21 @@
+.title{
+  
+    font-weight: 500;
+    font-family: Cambria;
+    font-size: 50px;
+    position: relative;
+    top: 0;
+    margin-top: -130px;
+    color: white;
+    margin-left: 20px;
+}
+
+@media (min-wigth: 500px) {
+  .title{
+    color: rgb(67, 17, 113);
+  }
+ 
+    
+}
+
+

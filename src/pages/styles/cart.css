@@ -1,0 +1,28 @@
+.purchase--btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555A88;
+    box-shadow: 0 0 5px #000a;
+    color: white;
+    margin-top: 15px;
+    transition: filter 100ms ease;
+    cursor: pointer;
+    font-family: Cambria;
+}
+.purchase--btn:hover{
+    filter: brightness(1.2);
+    transition: filter 100ms ease;
+    cursor: pointer;
+}
+.total{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    margin-top: 15px;
+    font-family: Cambria;
+    text-align: right;
+    padding-right: 15%;
+
+}
